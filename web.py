@@ -16,7 +16,7 @@ eg_failedrequest = requests.get("http://api.open-notify.org/fake-endpoint")
 print(f"failed request: {eg_failedrequest.status_code}")
 # this will return an exit code of 404 due to us hitting a failed endpoint
 
-# an example use case
+# an example use case:
 
 people_in_space = requests.get("http://api.open-notify.org/astros.json")
 # here is an example of hitting a succesful end point (URL), which returns specific information in our desired format
