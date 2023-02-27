@@ -23,6 +23,7 @@ print(f"successful request: {testrequest.status_code}")
 eg_failedrequest = requests.get("http://api.open-notify.org/fake-endpoint")
 print(f"failed request: {eg_failedrequest.status_code}")
 # this will return an exit code of 404 due to us hitting a failed endpoint
+# exit codes of the 500~ level indicate that the server has failed, and an endpoint was not hit at all
 
 # --------------------
 
@@ -59,6 +60,20 @@ for word in json.loads(search_request.text):
     print(word["word"])
 # as covered above, we can then use json conversion to parse and extract the desired rhyming words as our target data
 # BEAR IN MIND that we need to inspect the "shape" (format) of our returned json string before we begin to parse it accordingly, and should not assume that every website's API returns json files in a similar format
+
+# --------------------
+
+### REST APIS
+
+# most APIs are restful, and we can access the organised information (in the form of string JSONs and other formats) by targetting the specific endpoint (specified in the URL which differentiate different kinds of data resources on the server), a prime example being the NASA open-notify rest API we referenced above
+# the main thing to note about Rest APIs are that they are stateless, so neither the requesting client nor the server has to hold any information about the other party, and every http get request returns the requested output
+
+# ----------
+
+### GRAPHQL
+
+# GraphQL (graphical query language) is opposed to Rest APIs in that they allow for targetted fetching of specific elements within a string JSON that would normally be returned as a whole dictionary with a Rest API's http get request
+# the client sends in their get request in the format of a nested JSON, and it is up to the server to implement a solution to resolve said targetted get request
 
 # --------------------
 
