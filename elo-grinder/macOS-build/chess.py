@@ -3,7 +3,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 import time
 
-chromehand = webdriver.Chrome('../../../../../Public/chromedriver')
+chromehand = webdriver.Chrome('../../../../../../Public/chromedriver')
 chromehand.get("https://lichess.org/login?referrer=/")
 assert "lichess" in chromehand.title
 
