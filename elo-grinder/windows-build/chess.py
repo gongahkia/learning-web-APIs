@@ -3,7 +3,6 @@ import time
 import random
 import requests
 import json
-from PIL import ImageGrab
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
@@ -31,7 +30,7 @@ chat_y_coord = 868
 
 bible_api = requests.get(f"https://bible-api.com/Matthew {random.randint(1,29)}:{random.randint(1,20)}?translation=kjv")
 verse_dict = json.loads(bible_api.text)
-message = f"{verse_dict['reference']}\n{verse_dict['verses'][0]['text']}"
+message = f"{verse_dict['reference']} {verse_dict['verses'][0]['text']}"
 print(message)
 
 # ------------
@@ -74,7 +73,13 @@ print(chromehand.current_url) # prints unique URL for the respective game in the
 pyautogui.moveTo(chat_x_coord, chat_y_coord, 1.5)
 pyautogui.click()
 
+pyautogui.write("Hello! Just wanted to share something with you.")
+pyautogui.press('enter')
+
 pyautogui.write(message)
+pyautogui.press('enter')
+
+pyautogui.write("Thanks again for your time. Have a blessed day!")
 pyautogui.press('enter')
 
 time.sleep(10)
