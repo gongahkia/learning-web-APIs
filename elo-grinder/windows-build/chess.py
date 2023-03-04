@@ -1,3 +1,4 @@
+import pyautogui
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
@@ -20,10 +21,10 @@ login_username.send_keys("angryapplegravy@gmail.com")
 login_password.send_keys("mihri0-saMheh-gywcef")
 submit_button.click()
 
-time.sleep(10)
+time.sleep(40)
 
 # ------------
 
-# (2) add more here after tmr!
+# (2) try implementing pyautogui to click stuff
 
 chromehand.close()
