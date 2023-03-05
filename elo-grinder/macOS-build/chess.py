@@ -15,9 +15,9 @@ login_username = chromehand.find_element(By.NAME, "username")
 login_password = chromehand.find_element(By.NAME, "password")
 submit_button = chromehand.find_element(By.XPATH, '//button[text()="Sign in"]')
 
-# remember to hash out my actual username and password before pushing this to Git for the FINAL time
-login_username.send_keys("angryapplegravy@gmail.com")
-login_password.send_keys("mihri0-saMheh-gywcef")
+# remember to fill in your actual username and password before pushing this to Git for the FINAL time
+login_username.send_keys("")
+login_password.send_keys("")
 submit_button.click()
 
 # ----------
