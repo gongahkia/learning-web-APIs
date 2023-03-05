@@ -9,7 +9,7 @@ from selenium.webdriver.common.by import By
 
 # ------------
 
-# remember to hash out my actual username and password before pushing this to Git for the FINAL time
+# fill in your actual username and password before pushing this to Git for the FINAL time
 lichess_username = ""
 lichess_password = ""
 
