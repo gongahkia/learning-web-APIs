@@ -10,8 +10,8 @@ from selenium.webdriver.common.by import By
 # ------------
 
 # remember to hash out my actual username and password before pushing this to Git for the FINAL time
-lichess_username = "angryapplegravy@gmail.com"
-lichess_password = "mihri0-saMheh-gywcef"
+lichess_username = ""
+lichess_password = ""
 
 # ~Coordinate List~
 # Bullet 2 + 1 [960, 240]
