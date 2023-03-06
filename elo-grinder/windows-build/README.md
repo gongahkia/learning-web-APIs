@@ -1,4 +1,4 @@
-# Windows chess bot build
+# Lichess bot ***(Windows build)***
 
 This chess bot does not do what you think it will do.
 
