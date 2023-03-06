@@ -82,7 +82,7 @@ pyautogui.press('enter')
 pyautogui.write("Thanks again for your time. Have a blessed day!")
 pyautogui.press('enter')
 
-time.sleep(10)
+time.sleep(7)
 chromehand.close()
 
 # ------------
