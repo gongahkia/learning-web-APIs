@@ -1,7 +1,8 @@
 # Chess bot
 
-> For `windows-build`, install [chomedriver.exe](https://chromedriver.chromium.org/) and place it 3 file directories behind the `chess.py` file.  
-> For `macOS-build`, install [chromedriver.exe](https://chromedriver.chromium.org/) and place it within the `~/../../Public` file path.
+> For `windows-build`, install [chomedriver.exe](https://chromedriver.chromium.org/) and place it 3 file directories behind the `chess.py` file.
+  
+> *Edit on 13/3/2023*: The `macOS-build` has depreceated. Please wait for future updates.
 
 ![](https://images.chesscomfiles.com/uploads/v1/images_users/tiny_mce/brasileirosim/phpaRm8GF.jpeg)
 
